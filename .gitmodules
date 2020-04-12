@@ -1,0 +1,3 @@
+[submodule "paintBotWiki"]
+	path = paintBotWiki
+	url = https://RHieger@github.com/RHieger/optimum-energy-paint-bot-problem.wiki.git
