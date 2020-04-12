@@ -21,4 +21,4 @@ Time allowing, I will develop a front-end web page with a graphic representation
 icon that will move across it. Additionally, I would consider adding the information of the starting coordinate
 of the bot, just for completeness.
 
-For further information, please consult the [wiki]().
+For further information, please consult the [wiki](https://github.com/RHieger/optimum-energy-paint-bot-problem/wiki).
