@@ -2,10 +2,10 @@
   "name": "optimum-energy-paint-bot-problem",
   "version": "1.0.0",
   "description": "Paint Bot Problem--track number of squares in 10 x 10 grid painted and ending coordinates",
-  "main": "app.js",
+  "main": "paintbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node paintbot.js"
   },
   "keywords": [
     "JavaScript",
