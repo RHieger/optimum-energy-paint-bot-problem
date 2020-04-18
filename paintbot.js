@@ -34,11 +34,9 @@ let endYCoord;
 
 // READ DIRECTIONS (PATH) INTO MEMORY:
 
-fs.readFile('directions.json', (err, rawData) =>  {
+fs.readFile('directions.txt', (err, directions) =>  {
 
    if (err) return console.error(err);
-
-   let directions = JSON.parse(rawData);
 
    console.log(directions);
 
