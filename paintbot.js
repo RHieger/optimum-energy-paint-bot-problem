@@ -8,6 +8,10 @@
  * 
  */
 
+ // REQUIRED MODULES:
+
+ const fs = require('fs');
+
  // SET UP ENVIRONMENT:
 
  // x-y coordinates at start and endpoints of path
@@ -28,16 +32,14 @@ const ENDY = 9;
 let endXCoord;
 let endYCoord;
 
-// DIAGNOSTIC ONLY:
+// READ DIRECTIONS (PATH) INTO MEMORY:
 
-console.log();
-console.log('Starting Coordinates:\n');
-console.log(`startXCoord: ${startXCoord}`);
-console.log(`startYCoord: ${startYCoord}`);
-console.log();
-console.log('CONSTANTS for X-Y Coordinates:\n');
-console.log(`STARTX: ${STARTX}`);
-console.log(`STARTY: ${STARTY}`);
-console.log(`ENDX: ${ENDX}`);
-console.log(`ENDY: ${ENDY}`);
-console.log();
+fs.readFile('directions.json', (err, rawData) =>  {
+
+   if (err) return console.error(err);
+
+   let directions = JSON.parse(rawData);
+
+   console.log(directions);
+
+});
