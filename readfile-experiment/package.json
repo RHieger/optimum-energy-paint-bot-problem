@@ -1,0 +1,17 @@
+{
+  "name": "readfile-experiment",
+  "version": "1.0.0",
+  "description": "Experimental Node.js Code Using readfile Module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "ECMAScript",
+    "Node.js",
+    "plaintext"
+  ],
+  "author": "Robert Hieger",
+  "license": "ISC"
+}

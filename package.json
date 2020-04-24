@@ -16,5 +16,8 @@
     "CSS-Grid"
   ],
   "author": "Robert Hieger",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jshint": "^2.11.0"
+  }
 }
