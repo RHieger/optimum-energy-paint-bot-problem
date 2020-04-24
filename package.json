@@ -1,7 +1,7 @@
 {
   "name": "optimum-energy-paint-bot-problem",
   "version": "1.0.0",
-  "description": "Paint Bot Problem--track number of squares in 10 x 10 grid painted and ending coordinates",
+  "description": "Paint Bot Problem--track painted squares in 10 x 10 grid; ending coordinates",
   "main": "paintbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,8 +16,5 @@
     "CSS-Grid"
   ],
   "author": "Robert Hieger",
-  "license": "ISC",
-  "dependencies": {
-    "jshint": "^2.11.0"
-  }
+  "license": "ISC"
 }

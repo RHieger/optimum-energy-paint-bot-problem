@@ -8,7 +8,7 @@
  * generate count of squares painted.
  *
  * Robert Hieger
- * 04/20/2020
+ * 04/24/2020
  *
  */
 

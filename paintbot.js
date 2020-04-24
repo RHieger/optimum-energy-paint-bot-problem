@@ -10,34 +10,40 @@
 
  // REQUIRED MODULES:
 
+ const process = ('process'); // allows command line switch with Node
  const fs = require('fs');
 
  // SET UP ENVIRONMENT:
 
  // x-y coordinates at start and endpoints of path
 
-let startXCoord = 0;
-let startYCoord = 0;
+ const startX = 0;
+ const startY = 0;
+ 
+ const startCoord = [
+     startX,
+     startY
+ ];
+ 
+ let xCoord = startX;
+ let yCoord = startY;
 
-// CONSTANTS FOR BEGINNING AND ENDING COORDINATES:
+ console.log('\n\n****************************************');
+ console.log('*                                      *');
+ console.log('*            PAINT BOT v1.0.0          *');
+ console.log('*                                      *');
+ console.log('****************************************\n');
 
-const STARTX = 0;
-const ENDX = 9;
-const STARTY = 0;
-const ENDY = 9;
-
-// Values of endpoints dependent on path defined
-// in directions.json.
-
-let endXCoord;
-let endYCoord;
+ 
 
 // READ DIRECTIONS (PATH) INTO MEMORY:
 
-fs.readFile('directions.txt', (err, directions) =>  {
-
-   if (err) return console.error(err);
-
-   console.log(directions);
+const moves = fs.readFile(
+   'directions.txt',
+   { encoding: 'utf8' },
+   (err, moves)  =>  {
+      if (err) console.error(err);
+      let moveData = moves.split('\n', 28);
+      //console.log(moveData);
 
 });
