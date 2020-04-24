@@ -4,7 +4,7 @@
  * 
  * Paint Bot
  * Robert Hieger
- * 04/18/2020
+ * 04/24/2020
  * 
  */
 
@@ -12,6 +12,7 @@
 
  const process = ('process'); // allows command line switch with Node
  const fs = require('fs');
+ const grid = require('./grid');
 
  // SET UP ENVIRONMENT:
 
@@ -34,7 +35,9 @@
  console.log('*                                      *');
  console.log('****************************************\n');
 
- 
+let coordinates = JSON.stringify(grid);
+
+console.log(coordinates);
 
 // READ DIRECTIONS (PATH) INTO MEMORY:
 
@@ -44,6 +47,6 @@ const moves = fs.readFile(
    (err, moves)  =>  {
       if (err) console.error(err);
       let moveData = moves.split('\n', 28);
-      //console.log(moveData);
+      console.log(moveData);
 
 });

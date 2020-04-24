@@ -1,34 +1,16 @@
 /**
- *
- * app.js
- *
- * Experimental Node.js readfile module code
- *
- * PURPOSE: Collect Beginning and endeing points in Bot Path, and
- * generate count of squares painted.
- *
+ * 
+ * grid.js
+ * 
+ * This module models the 10 x 10 grid of squares traversed by
+ * the Paint Bot in the form of an array of coordinate objects.
+ * 
  * Robert Hieger
  * 04/24/2020
- *
+ * 
  */
 
-// REQUIRED MODULES:
-
-const fs = require('fs');
-
-const startX = 0;
-const startY = 0;
-
-const startCoord = [
-    startX,
-    startY
-];
-
-let xCoord = startX;
-let yCoord = startY;
-
-const grid = [
-    
+ grid = [
     { x: 0, y: 0 }, { x: 1, y: 0 }, { x: 2, y: 0 }, { x: 3, y: 0 }, 
     { x: 4, y: 0 }, { x: 5, y: 0 }, { x: 6, y: 0 }, { x: 7, y: 0 },
     { x: 8, y: 0 }, { x: 9, y: 0 }, { x: 10, y: 1 }, { x: 11, y: 1 },
@@ -56,22 +38,4 @@ const grid = [
     { x: 97, y: 9 }, { x: 98, y: 9 }, { x: 99, y: 9 }
 ];
 
-console.log('\n\nGrid X/Y Coordinates:');
-console.log('--------------------\n');
-
-let coordinates = JSON.stringify(grid);
-
-console.log(coordinates);
-
-let squareCount = 0;
-
-console.log(`Starting Coordinates: X=${ startX }, Y=${ startY }\n`);
-
-
-fs.readFile('directions.txt', { encoding: 'utf8' }, (err, directions) => {
-    if (err) console.error(err);
-    
-    directionData = directions.split(' ');
-
-    console.log(directions);
-});
+exports = grid;
