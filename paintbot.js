@@ -12,7 +12,9 @@
 
  const process = ('process'); // allows command line switch with Node
  const fs = require('fs');
+ 
  const grid = require('./grid');
+ const directions = require('./directions');
 
  // SET UP ENVIRONMENT:
 
@@ -24,13 +26,4 @@
 
 grid.getCoordinates(0, 'Starting Coordinates');
 
-
-// READ DIRECTIONS (PATH) INTO MEMORY:
-
-const moves = fs.readFile(
-   'directions.txt',
-   { encoding: 'utf8' },
-   (err, moves)  =>  {
-      if (err) console.error(err);
-      let moveData = moves.split('\n', 28);
-});
+directions.returnMove();
