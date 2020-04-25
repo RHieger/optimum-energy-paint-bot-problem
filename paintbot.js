@@ -16,28 +16,14 @@
 
  // SET UP ENVIRONMENT:
 
- // x-y coordinates at start and endpoints of path
-
- const startX = 0;
- const startY = 0;
- 
- const startCoord = [
-     startX,
-     startY
- ];
- 
- let xCoord = startX;
- let yCoord = startY;
-
  console.log('\n\n****************************************');
  console.log('*                                      *');
  console.log('*            PAINT BOT v1.0.0          *');
  console.log('*                                      *');
  console.log('****************************************\n');
 
-let coordinates = JSON.stringify(grid);
+grid.getCoordinates(0, 'Starting Coordinates');
 
-console.log(coordinates);
 
 // READ DIRECTIONS (PATH) INTO MEMORY:
 
@@ -47,6 +33,4 @@ const moves = fs.readFile(
    (err, moves)  =>  {
       if (err) console.error(err);
       let moveData = moves.split('\n', 28);
-      console.log(moveData);
-
 });
