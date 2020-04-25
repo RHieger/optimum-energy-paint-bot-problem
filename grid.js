@@ -33,9 +33,11 @@
     [95, 9], [96, 9], [97, 9], [98, 9], [99, 9]
 ];
 
-const getCoordinates = (coordinates, beginOrEnd) =>  {
-    console.log(`${beginOrEnd}: x: ${grid[coordinates][0]}` +
+const getCoordinates = (coordinates, coordsName) =>  {
+    console.log(`${coordsName}: x: ${grid[coordinates][0]}` +
     ` y: ${grid[coordinates][1]}\n`);
+    let currentCoords = grid[coordinates];
+    return currentCoords;
 };
 
 module.exports = {
